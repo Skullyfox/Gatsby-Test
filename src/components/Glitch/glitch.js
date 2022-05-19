@@ -5,9 +5,9 @@ import { glitch } from './glitch.module.css';
 var Glitcher = (function () {
     function Glitcher(options) {
         this.canvas = typeof document !== `undefined` ? document.createElement('canvas') : null 
-        this.context = this.canvas.getContext('2d');
+        this.context = typeof document !== `undefined` ? this.canvas.getContext('2d') : null
         this.origCanvas = typeof document !== `undefined` ? document.createElement('canvas') : null 
-        this.origContext = this.origCanvas.getContext('2d');
+        this.origContext = typeof document !== `undefined` ? this.origCanvas.getContext('2d'): null
         this.options = options;
     }
     Glitcher.prototype.glitch = function (url, callback) {
