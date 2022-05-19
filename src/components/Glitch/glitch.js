@@ -71,7 +71,7 @@ var Glitcher = (function () {
     };
 
     Glitcher.prototype.loadImage = function (url, callback) {
-        var img = document.createElement('img');
+        var img = typeof document !== `undefined` ? document.createElement('img') : null
         img.crossOrigin = 'anonymous';
         img.onload = function () {
             callback(img);
@@ -105,7 +105,7 @@ var glitcher = new Glitcher({
 });
 
 glitcher.glitch('https://i.imgur.com/UGuwERb.png', function () {
-    document.body.appendChild(glitcher.canvas);
+    document.body.appendChild(glitcher.canvas)
 });
 
 function randomRange(min, max) {
