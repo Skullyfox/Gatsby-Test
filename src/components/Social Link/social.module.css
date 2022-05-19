@@ -1,0 +1,18 @@
+.socialBar{
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+}
+.imgContainer{
+    margin: 0 10px;
+    width: 50px;
+    transition : transform .3s;
+}
+
+.imgContainer:hover{
+    transform: scale(130%);
+    filter: drop-shadow(1.5mm 1.5mm 1mm rgba(255, 255, 255, 0.2));
+}
