@@ -4,10 +4,10 @@ import { glitch } from './glitch.module.css';
 
 var Glitcher = (function () {
     function Glitcher(options) {
-        this.canvas = typeof document !== `undefined` ? document.createElement('canvas') : null 
-        this.context = typeof document !== `undefined` ? this.canvas.getContext('2d') : null
-        this.origCanvas = typeof document !== `undefined` ? document.createElement('canvas') : null 
-        this.origContext = typeof document !== `undefined` ? this.origCanvas.getContext('2d'): null
+        this.canvas =  document.createElement('canvas') ; 
+        this.context =  this.canvas.getContext('2d') ;
+        this.origCanvas =  document.createElement('canvas') ; 
+        this.origContext =  this.origCanvas.getContext('2d');
         this.options = options;
     }
     Glitcher.prototype.glitch = function (url, callback) {
@@ -71,7 +71,7 @@ var Glitcher = (function () {
     };
 
     Glitcher.prototype.loadImage = function (url, callback) {
-        var img = typeof document !== `undefined` ? document.createElement('img') : null
+        var img =  document.createElement('img') ;
         img.crossOrigin = 'anonymous';
         img.onload = function () {
             callback(img);

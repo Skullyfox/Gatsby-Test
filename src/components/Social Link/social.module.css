@@ -1,6 +1,6 @@
 .socialBar{
     position: absolute;
-    bottom: 300px;
+    bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
