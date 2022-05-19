@@ -1,26 +1,3 @@
-#ajerez {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  z-index: 9999;
-}
-#ajerez img {
-  box-sizing: border-box;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 2px solid #7482A5;
-  transition: border-radius 0.2s ease-in-out;
-}
-#ajerez img:hover {
-  border-radius: 30%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background: #23272A;
   font-size: 20px;
