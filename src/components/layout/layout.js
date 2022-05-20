@@ -6,12 +6,16 @@ import icon from '../../images/skullyfox.png';
 const Layout = (props) => {
     const pageTitle = props.pageTitle;
     const children = props.children;
+    const description = props.description;
+    const author = `Skullyfox`;
   return (
     <div className={container}>
       <Helmet>
           <meta charSet="utf-8" />
           <title>{pageTitle}</title>
           <link rel='icon' type='image/png' href={icon} />
+          <meta name="author" content={author} />
+          <meta name="description" content={description} />
       </Helmet>
       <main>
         {children}
