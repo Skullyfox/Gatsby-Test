@@ -6,7 +6,7 @@ import Social from '../components/Social Link/social';
 
 const IndexPage = () => {
     return(
-        <Layout pageTitle = 'Coming Soon' description='Site Web de SkullyfoxTV -- En Développement'>
+        <Layout pageTitle = 'SkullyfoxTV - Site Officiel' description='Site Web de SkullyfoxTV -- En Développement'>
             <Canvas />
             <Social/>
         </Layout>
