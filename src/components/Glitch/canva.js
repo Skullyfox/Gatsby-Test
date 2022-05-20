@@ -1,16 +1,11 @@
 import React, { lazy, Suspense } from 'react';
 
 const LazyGlitch = lazy(() => import('./glitch'));
-//const isBrowser = () => typeof window !== 'undefined';
+const isBrowser = () => typeof window !== 'undefined';
 
-//const Canvas =  () => isBrowser() ? <LazyGlitch /> : <canvas />
-
-const Canvas = () => {
- return(
-   <Suspense fallback={<div>Chargement...</div>}>
-    <LazyGlitch />
-   </Suspense>
- )
-}
+const Canvas =  () => isBrowser() ? (
+<Suspense fallback="Chargement">
+  <LazyGlitch text="COMING SOON" />
+</Suspense>) : <canvas />
 
 export default Canvas

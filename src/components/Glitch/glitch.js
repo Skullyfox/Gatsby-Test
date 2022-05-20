@@ -133,10 +133,10 @@ setInterval(function () {
 }, 100);
 
 
-const Glitch = () => {
+const Glitch = (props) => {
  return (
-     <div className={glitch} data-text='COMING SOON'>
-        COMING SOON</div>
+     <div className={glitch} data-text={props.text}>
+        {props.text}</div>
  )
 };
 
