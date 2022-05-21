@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { container } from './layout.module.css';
+import { container, main } from './layout.module.css';
 import { Helmet } from "react-helmet";
 import icon from '../../images/skullyfox.png';
 import miniature from '../../images/miniature.jpg';
@@ -29,7 +29,7 @@ const Layout = (props) => {
           <meta property="twitter:description" content={description} />
           <meta property="twitter:image" content={miniature} />
       </Helmet>
-      <main>
+      <main className={main}>
         {children}
       </main>
     </div>

@@ -1,0 +1,16 @@
+.AccessContainer{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+}
+
+.inputPassword{
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    filter: drop-shadow(1);
+    color: #333;
+}
