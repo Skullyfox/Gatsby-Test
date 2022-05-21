@@ -36,7 +36,7 @@ const Access = () => {
                             checkPassword(ev.target.value);
                         }
                     }}/>
-                    {auth ? redirect(): (<h1>Mauvais mot de passe</h1>) }
+                    {auth ? redirect(): null }
      </div>
  )
 }
